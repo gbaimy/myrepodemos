@@ -1,2 +1,6 @@
+<<<<<<< HEAD
 this is another line to add
 
+=======
+this is my first attempt on github
+>>>>>>> 40d245d270cd61e33fa9ff2d708521f0a1458ae4
