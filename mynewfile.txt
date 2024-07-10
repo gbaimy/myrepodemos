@@ -1,0 +1,13 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+i am moving forward
+
+reset 1
+
+reset 2
+=======
+>>>>>>> parent of fb43f17 (this is another addition)
+=======
+i am moving forward
+>>>>>>> parent of e268394 (this is for the reset)
