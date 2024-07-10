@@ -1,6 +1,9 @@
+<<<<<<< HEAD
 
 i am moving forward
 
 reset 1
 
 reset 2
+=======
+>>>>>>> parent of fb43f17 (this is another addition)
