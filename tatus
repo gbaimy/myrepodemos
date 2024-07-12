@@ -1,0 +1,137 @@
+[33mcommit 25236f512624a1de0666dac9545ed43bd67946bc[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mbranch-one[m[33m)[m
+Author: gbemisola <pooly_promise@yahoo.com>
+Date:   Wed Jul 10 14:18:40 2024 +0100
+
+    Reapply "okay to go"
+    
+    This reverts commit 1ce891bc556d9ed1edc7947184f48eff4844de18.
+
+[33mcommit 1ce891bc556d9ed1edc7947184f48eff4844de18[m
+Author: gbemisola <pooly_promise@yahoo.com>
+Date:   Wed Jul 10 14:16:11 2024 +0100
+
+    Revert "okay to go"
+    
+    This reverts commit b504c93fbe6fe68b338d8a41f31c1de0558e9e2a.
+
+[33mcommit b504c93fbe6fe68b338d8a41f31c1de0558e9e2a[m[33m ([m[1;31morigin/branch-one[m[33m)[m
+Author: gbemisola <pooly_promise@yahoo.com>
+Date:   Wed Jul 10 14:14:27 2024 +0100
+
+    okay to go
+
+[33mcommit 98344176d1f20b3947ee24eb954f56c733c9ac62[m
+Author: gbemisola <pooly_promise@yahoo.com>
+Date:   Wed Jul 10 14:07:54 2024 +0100
+
+    Reapply "this is for the reset"
+    
+    This reverts commit e8727ab7b6bf02dc80c6bed9c401cf646aef8cfe.
+
+[33mcommit e8727ab7b6bf02dc80c6bed9c401cf646aef8cfe[m
+Author: gbemisola <pooly_promise@yahoo.com>
+Date:   Wed Jul 10 14:05:35 2024 +0100
+
+    Revert "this is for the reset"
+    
+    This reverts commit e268394d38d41cca9c13a396716de274286b36db.
+
+[33mcommit 3a767f60f563846fdc7c959243bcab62fc04acf2[m
+Author: gbemisola <pooly_promise@yahoo.com>
+Date:   Wed Jul 10 14:00:45 2024 +0100
+
+    this is the new one
+
+[33mcommit 92e6dba05c0709317b5d4b921f5b9766f0efa622[m
+Author: gbemisola <pooly_promise@yahoo.com>
+Date:   Wed Jul 10 13:56:55 2024 +0100
+
+    this ine is new
+
+[33mcommit e268394d38d41cca9c13a396716de274286b36db[m
+Author: gbemisola <pooly_promise@yahoo.com>
+Date:   Wed Jul 10 13:54:28 2024 +0100
+
+    this is for the reset
+
+[33mcommit fb43f172be4ae606745adca77ac63c3a52ea5b37[m
+Author: gbemisola <pooly_promise@yahoo.com>
+Date:   Wed Jul 10 13:10:01 2024 +0100
+
+    this is another addition
+
+[33mcommit e4303c0e497dc7f1fd4ae4f1099871ce2c683315[m
+Author: gbemisola <pooly_promise@yahoo.com>
+Date:   Wed Jul 10 12:39:42 2024 +0100
+
+    this is the final
+
+[33mcommit 5ca3087b5ce7bcf84483dfa57eb2dcb92c63e0be[m
+Author: gbemisola <pooly_promise@yahoo.com>
+Date:   Wed Jul 10 11:31:12 2024 +0100
+
+    this is new
+
+[33mcommit 19970f32e3a3f013d687c4bd070c5079f502654e[m
+Merge: dc200aa 91f930e
+Author: gbaimy <pooly_promise@yahoo.com>
+Date:   Wed Jul 10 10:56:16 2024 +0100
+
+    Merge pull request #3 from gbaimy/branch-one
+    
+    Merge pull request #2 from gbaimy/main-branch
+
+[33mcommit 91f930ea63aae8e262c262a5c1e3b06f0c7eb0a5[m
+Merge: af8e3e2 dc200aa
+Author: gbaimy <pooly_promise@yahoo.com>
+Date:   Wed Jul 10 10:55:21 2024 +0100
+
+    Merge pull request #2 from gbaimy/main-branch
+    
+    Merge pull request #1 from gbaimy/branch-one
+
+[33mcommit dc200aa44a6c064f33324dbfc6108c39c7175a0b[m
+Merge: 30778e9 af8e3e2
+Author: gbaimy <pooly_promise@yahoo.com>
+Date:   Mon Jul 8 15:12:59 2024 +0100
+
+    Merge pull request #1 from gbaimy/branch-one
+    
+    Branch one
+
+[33mcommit af8e3e2d5f6e9efe785a9be3a7d2738d1ebfee50[m
+Author: gbemisola <pooly_promise@yahoo.com>
+Date:   Mon Jul 8 15:07:06 2024 +0100
+
+    branch-one
+
+[33mcommit 7b9dfa26fc048e206c424337c1813101a467df8a[m
+Author: gbemisola <pooly_promise@yahoo.com>
+Date:   Mon Jul 8 14:59:58 2024 +0100
+
+    Newfile.txt
+
+[33mcommit 30778e9eba63dde4ca8558443e5847407cd48e8a[m
+Merge: 57fcf9b 40d245d
+Author: gbemisola <pooly_promise@yahoo.com>
+Date:   Mon Jul 8 14:34:29 2024 +0100
+
+    testfile.txt
+
+[33mcommit 57fcf9b290a437044df8c7cb53110669e81fe549[m
+Author: gbemisola <pooly_promise@yahoo.com>
+Date:   Mon Jul 8 13:45:39 2024 +0100
+
+    testfile.txt
+
+[33mcommit 40d245d270cd61e33fa9ff2d708521f0a1458ae4[m
+Author: gbaimy <pooly_promise@yahoo.com>
+Date:   Mon Jul 8 13:25:26 2024 +0100
+
+    Create testfile.txt
+
+[33mcommit 14041525b4ed28561b8022d99770988d3cc79ca1[m
+Author: gbaimy <pooly_promise@yahoo.com>
+Date:   Mon Jul 8 13:22:18 2024 +0100
+
+    Initial commit
