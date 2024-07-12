@@ -1,11 +1,16 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 i am moving forward
 
-
+new line
 =======
 >>>>>>> parent of fb43f17 (this is another addition)
 =======
 i am moving forward
 >>>>>>> parent of e268394 (this is for the reset)
+this is a sample line
+=======
+Hello in the new file
+>>>>>>> main-branch
