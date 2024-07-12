@@ -9,3 +9,4 @@ new line
 =======
 i am moving forward
 >>>>>>> parent of e268394 (this is for the reset)
+this is a sample line
