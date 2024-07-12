@@ -3,7 +3,7 @@
 
 i am moving forward
 
-
+new line
 =======
 >>>>>>> parent of fb43f17 (this is another addition)
 =======
