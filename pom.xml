@@ -45,10 +45,10 @@
             <scope>test</scope>
         </dependency>
 <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-jar-plugin -->
-<dependency>
-    <groupId>org.apache.maven.plugins</groupId>
-    <artifactId>maven-jar-plugin</artifactId>
-    <version>4.0.0-beta-1</version>
-</dependency>
-</dependencies>
+      <dependency>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-jar-plugin</artifactId>
+          <version>4.0.0-beta-1</version>
+      </dependency>
+   </dependencies>
 </project>
