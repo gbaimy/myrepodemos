@@ -3,7 +3,6 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
                              http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
     <!-- Project coordinates -->
     <groupId>com.example</groupId>
     <artifactId>my-app</artifactId>
@@ -16,8 +15,9 @@
 
     <!-- Build settings -->
     <build>
+     <reporting>
         <plugins>
-            <plugin>
+          <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.8.1</version>
@@ -29,12 +29,13 @@
           <plugin>
              <groupId>org.apache.maven.plugins</groupId>
              <artifactId>maven-surefire-plugin</artifactId>
-	     <version>3.0.0-M5</version>
+	     <version>3.3.1</version>
             <configuration>
                 <reportsDirectory>${project.build.directory}/surefire-reports</reportsDirectory>
             </configuration>
       </plugin>
     </plugins>
+   </reporting>
   </build>
   <!-- Dependencies -->
     <dependencies>
