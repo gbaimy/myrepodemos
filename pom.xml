@@ -3,7 +3,6 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
                              http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
     <!-- Project coordinates -->
     <groupId>com.example</groupId>
     <artifactId>my-app</artifactId>
@@ -17,7 +16,7 @@
     <!-- Build settings -->
     <build>
         <plugins>
-            <plugin>
+          <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.8.1</version>
@@ -27,14 +26,12 @@
                 </configuration>
 	</plugin>
           <plugin>
-             <groupId>org.apache.maven.plugins</groupId>
-             <artifactId>maven-surefire-plugin</artifactId>
-	     <version>3.0.0-M5</version>
-            <configuration>
-                <reportsDirectory>${project.build.directory}/surefire-reports</reportsDirectory>
-            </configuration>
-      </plugin>
-    </plugins>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-report-plugin</artifactId>
+		<version>3.3.1</version>
+		 <skipTests>false</skipTests>
+        </plugin>
+     </plugins>
   </build>
   <!-- Dependencies -->
     <dependencies>
@@ -45,10 +42,10 @@
             <scope>test</scope>
         </dependency>
 <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-jar-plugin -->
-<dependency>
-    <groupId>org.apache.maven.plugins</groupId>
-    <artifactId>maven-jar-plugin</artifactId>
-    <version>4.0.0-beta-1</version>
-</dependency>
-</dependencies>
+      <dependency>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-jar-plugin</artifactId>
+          <version>4.0.0-beta-1</version>
+      </dependency>
+   </dependencies>
 </project>
