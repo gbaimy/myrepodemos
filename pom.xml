@@ -9,6 +9,7 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
+<<<<<<< HEAD
     <name>My App</name>
     <description>Example project for Maven</description>
     <url>http://example.com/my-app</url>
@@ -21,6 +22,17 @@
     <build>
         <plugins>
             <plugin>
+=======
+    <!-- Project metadata -->
+    <name>My App</name>
+    <description>A simple Maven project example</description>
+    <url>http://www.example.com/my-app</url>
+
+    <!-- Build settings -->
+    <build>
+        <plugins>
+          <plugin>
+>>>>>>> 8bde095d0aee809d2883eb507ee22694fbc5bb9d
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.8.1</version>
@@ -28,6 +40,7 @@
                     <source>1.8</source>
                     <target>1.8</target>
                 </configuration>
+<<<<<<< HEAD
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -75,6 +88,54 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+=======
+	</plugin>
+          <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-report-plugin</artifactId>
+		<version>3.3.1</version>
+        </plugin>
+     </plugins>
+  </build>
+  
+  <dependencies>
+    <!-- JUnit Dependency for Unit Testing -->
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.13.2</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+
+  <reporting>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-report-plugin</artifactId>
+        <version>3.3.1</version>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-project-info-reports-plugin</artifactId>
+        <version>3.3.0</version>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jxr-plugin</artifactId>
+        <version>3.1.1</version>
+        <reportSets>
+          <reportSet>
+            <reports>
+              <report>jxr</report>
+              <report>test-jxr</report>
+            </reports>
+          </reportSet>
+        </reportSets>
+      </plugin>
+    </plugins>
+  </reporting>
+>>>>>>> 8bde095d0aee809d2883eb507ee22694fbc5bb9d
 </project>
 
 
