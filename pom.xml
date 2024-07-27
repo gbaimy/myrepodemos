@@ -1,7 +1,6 @@
-
 <project xmlns="http://maven.apache.org/POM/4.0.0"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.example</groupId>
@@ -9,7 +8,6 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-<<<<<<< HEAD
     <name>My App</name>
     <description>Example project for Maven</description>
     <url>http://example.com/my-app</url>
@@ -17,22 +15,43 @@
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
+        <maven.surefire.plugin.version>3.0.0-M5</maven.surefire.plugin.version>
+        <maven.clean.plugin.version>3.2.0</maven.clean.plugin.version>
+        <maven.resources.plugin.version>3.2.0</maven.resources.plugin.version>
     </properties>
 
     <build>
         <plugins>
+            <!-- Clean Plugin -->
             <plugin>
-=======
-    <!-- Project metadata -->
-    <name>My App</name>
-    <description>A simple Maven project example</description>
-    <url>http://www.example.com/my-app</url>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-clean-plugin</artifactId>
+                <version>${maven.clean.plugin.version}</version>
+                <configuration>
+                    <filesets>
+                        <fileset>
+                            <directory>${project.build.directory}</directory>
+                        </fileset>
+                    </filesets>
+                </configuration>
+            </plugin>
 
-    <!-- Build settings -->
-    <build>
-        <plugins>
-          <plugin>
->>>>>>> 8bde095d0aee809d2883eb507ee22694fbc5bb9d
+            <!-- Resources Plugin -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
+                <version>${maven.resources.plugin.version}</version>
+                <configuration>
+                    <encoding>UTF-8</encoding>
+                    <includes>
+                        <include>**/*.properties</include>
+                        <include>**/*.xml</include>
+                    </includes>
+                </configuration>
+            </plugin>
+
+            <!-- Compiler Plugin -->
+            <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.8.1</version>
@@ -40,16 +59,22 @@
                     <source>1.8</source>
                     <target>1.8</target>
                 </configuration>
-<<<<<<< HEAD
             </plugin>
+
+            <!-- Surefire Plugin for Running Tests and Generating Reports -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
-                <version>3.0.0-M5</version>
+                <version>${maven.surefire.plugin.version}</version>
                 <configuration>
+                    <includes>
+                        <include>**/*Test.java</include>
+                    </includes>
                     <reportsDirectory>${project.build.directory}/surefire-reports</reportsDirectory>
                 </configuration>
             </plugin>
+
+            <!-- JAR Plugin -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
@@ -58,29 +83,24 @@
                     <finalName>${project.artifactId}-${project.version}</finalName>
                 </configuration>
             </plugin>
+
+            <!-- Site Plugin -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-site-plugin</artifactId>
                 <version>3.3</version>
             </plugin>
+
+            <!-- Project Info Reports Plugin -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-project-info-reports-plugin</artifactId>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-clean-plugin</artifactId>
-                <version>3.1.0</version>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-resources-plugin</artifactId>
-                <version>3.0.2</version>
             </plugin>
         </plugins>
     </build>
 
     <dependencies>
+        <!-- JUnit Dependency for Testing -->
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
@@ -88,55 +108,9 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-=======
-	</plugin>
-          <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-surefire-report-plugin</artifactId>
-		<version>3.3.1</version>
-        </plugin>
-     </plugins>
-  </build>
-  
-  <dependencies>
-    <!-- JUnit Dependency for Unit Testing -->
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>4.13.2</version>
-      <scope>test</scope>
-    </dependency>
-  </dependencies>
-
-  <reporting>
-    <plugins>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-surefire-report-plugin</artifactId>
-        <version>3.3.1</version>
-      </plugin>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-project-info-reports-plugin</artifactId>
-        <version>3.3.0</version>
-      </plugin>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-jxr-plugin</artifactId>
-        <version>3.1.1</version>
-        <reportSets>
-          <reportSet>
-            <reports>
-              <report>jxr</report>
-              <report>test-jxr</report>
-            </reports>
-          </reportSet>
-        </reportSets>
-      </plugin>
-    </plugins>
-  </reporting>
->>>>>>> 8bde095d0aee809d2883eb507ee22694fbc5bb9d
 </project>
+
+   
 
 
 
