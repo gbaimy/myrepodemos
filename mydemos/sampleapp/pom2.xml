@@ -12,8 +12,14 @@
         <maven.compiler.target>1.8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <failOnMissingWebXml>false</failOnMissingWebXml>
-    </properties>
-
+ </properties>
+<parent>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-parent</artifactId>
+    <version>3.1.4</version>    <!-- Replace with the appropriate Spring Boot version -->
+    <relativePath/>
+    <!-- lookup parent from repository -->
+</parent>
     <dependencies>
         <!-- Servlet API -->
         <dependency>
@@ -45,10 +51,38 @@
             <artifactId>mockito-core</artifactId>
             <version>3.11.2</version>
             <scope>test</scope>
-        </dependency>
+    </dependency>
+  <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter</artifactId>
+        <version>3.1.4</version> <!-- Add the correct version here -->
+    </dependency>
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-web</artifactId>
+        <version>3.1.4</version> <!-- Add the correct version here -->
+    </dependency>
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-test</artifactId>
+        <version>3.1.4</version> <!-- Add the correct version here -->
+        <scope>test</scope>
+    </dependency>
     </dependencies>
 
     <build>
+	 <sourceDirectory>src/main/java</sourceDirectory>
+        <testSourceDirectory>src/test/java</testSourceDirectory>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+            </resource>
+        </resources>
+        <testResources>
+            <testResource>
+                <directory>src/test/resources</directory>
+            </testResource>
+        </testResources>
         <plugins>
             <!-- Maven Compiler Plugin -->
             <plugin>
@@ -56,8 +90,8 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.8.1</version>
                 <configuration>
-                    <source>${maven.compiler.source}</source>
-                    <target>${maven.compiler.target}</target>
+			<source>11</source>
+			<target>11</target>
                 </configuration>
             </plugin>
 
@@ -95,7 +129,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-resources-plugin</artifactId>
-                <version>3.2.0</version>
+		<version>3.1.0</version>
                 <executions>
                     <execution>
                         <id>default-resources</id>
